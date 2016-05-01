@@ -9,6 +9,13 @@ body{
 	margin:0;
 	font-family: 'Open Sans', sans-serif;
 }
+iframe {
+    width: 90%;
+
+    margin: 0 auto;
+    background-color: #777;
+		display:block;
+}
 @font-face
 {
 font-family: snakeJacket;
@@ -574,7 +581,7 @@ p.quis{
     -o-background-size: cover;
     -moz-background-size: cover;
     -ms-background-size: cover;
-    min-height: 470px;
+    min-height: 500px;
 }
 .mid-top {
     background-color: rgba(44, 62, 80, 0.81);
