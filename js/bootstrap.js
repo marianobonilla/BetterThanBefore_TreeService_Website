@@ -198,6 +198,12 @@ if (typeof jQuery === 'undefined') {
     loadingText: 'loading...'
   }
 
+  function sendMail(isForm){
+  	isBody = isForm.Message.value;
+  	recipient = "me@someDomain.com";
+  	isSubject = "BTBTreeService Customer : " + isForm.Name.value;
+  	document.forms.Send.action = "mailto:"+recipient+"?subject="+isSubject+"&body="+isBody+"&nbsp"
+  }
   Button.prototype.setState = function (state) {
     var d    = 'disabled'
     var $el  = this.$element
